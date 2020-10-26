@@ -2,7 +2,10 @@
 
 In order to run the solution you'll have to have
 docker-compose & docker installed and run the following command:
-docker-compose up -d 
+`docker-compose up -d `
+
+or run setup_en.sh  to handle docker&docker-compose installations and 
+bring up the env with docker-compose.
 
 Loadbalancer:
 I've chosen nginx as a loadbalancer since it answers most of the requirments of the task.
