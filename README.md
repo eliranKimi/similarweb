@@ -43,20 +43,20 @@ the command was :
 `docker run --network similarweb_anetwork --rm lopezs/siege -t20s -c1000 http://nginx:8080/login`
 
 Here is the output:
- ** SIEGE 4.0.2
- ** Preparing 1000 concurrent users for battle.
-The server is now under siege...
-Lifting the server siege...
-Transactions:                  15598 hits
-Availability:                 100.00 %
-Elapsed time:                  20.06 secs
-Data transferred:               0.03 MB
-Response time:                  0.61 secs
-Transaction rate:             777.57 trans/sec
-Throughput:                     0.00 MB/sec
-Concurrency:                  471.05
-Successful transactions:       15598
-Failed transactions:               0
-Longest transaction:           17.24
-Shortest transaction:           0.00
+<br> ** SIEGE 4.0.2 </br>
+ ** Preparing 1000 concurrent users for battle.\
+The server is now under siege...\
+Lifting the server siege...\
+Transactions:                  15598 hits\
+Availability:                 100.00%\
+Elapsed time:                  20.06 secs\
+Data transferred:               0.03 MB\
+Response time:                  0.61 secs\
+Transaction rate:             777.57 trans/sec\
+Throughput:                     0.00 MB/sec\
+Concurrency:                  471.05\
+Successful transactions:       15598\
+Failed transactions:               0\
+Longest transaction:           17.24\
+Shortest transaction:           0.00\
 
