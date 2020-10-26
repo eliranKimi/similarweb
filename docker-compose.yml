@@ -1,0 +1,36 @@
+version: '2'
+
+networks:
+  anetwork:
+    driver: bridge
+
+services:
+  service:
+    networks:
+      - anetwork
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+  nginx:
+    container_name: nginx
+    networks:
+      - anetwork
+    image: nginx:latest
+    ports:
+      - '8080:8080'
+    volumes:
+        - './nginx/default.conf:/etc/nginx/conf.d/default.conf'
+        - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+  nginx-exporter:
+      image: nginx/nginx-prometheus-exporter:0.8.0
+      networks:
+        - anetwork
+      ports:
+        - '9113:9113'
+      environment:
+        - SCRAPE_URI=http://nginx:8080/nginx_status
+
+
+
