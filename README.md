@@ -1,4 +1,4 @@
-# SimilarWeb
+# SimilarWeb-Hometask
 The following was tested on an Ubuntu 18.04 machine.
 In order to run the solution you'll have to have
 docker-compose & docker installed and run the following command:
