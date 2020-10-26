@@ -37,9 +37,9 @@ and buffer related configurations.
 
 To test performance i've used an siege docker 
 the command was : 
-docker run --network similarweb_anetwork --rm lopezs/siege -t20s -c1000 http://nginx:8080/login
+`docker run --network similarweb_anetwork --rm lopezs/siege -t20s -c1000 http://nginx:8080/login`
 
-`Here is the output:
+Here is the output:
  ** SIEGE 4.0.2
  ** Preparing 1000 concurrent users for battle.
 The server is now under siege...
@@ -56,4 +56,4 @@ Successful transactions:       15598
 Failed transactions:               0
 Longest transaction:           17.24
 Shortest transaction:           0.00
-`
+
