@@ -1,4 +1,4 @@
-# similarweb
+# SimilarWeb
 The following was tested on an Ubuntu 18.04 machine.
 In order to run the solution you'll have to have
 docker-compose & docker installed and run the following command:
@@ -20,8 +20,8 @@ and included a Dockerfile for the building proccess.
 ## Section 1 - Get requirment
 By default a server is chosen from the backend in a round-robin fashion like requested on section one.
 
-## Section 2 &3 -
-POST requirments: Used the mirror module of nginx to mirror post requests
+## Section 2 &3 -POST requirments
+Used the mirror module of nginx to mirror post requests
 In addition POST requests are automaticliy retried once failed.
 
 Couldn't find a reference to the exponential backoff interval,
