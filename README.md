@@ -4,7 +4,7 @@ In order to run the solution you'll have to have
 docker-compose & docker installed and run the following command:
 `docker-compose up -d `
 
-or run setup_en.sh  to handle docker&docker-compose installations and 
+or run setup_env.sh  to handle docker&docker-compose installations and 
 bring up the env with docker-compose.
 
 Loadbalancer:
